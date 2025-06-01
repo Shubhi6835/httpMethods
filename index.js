@@ -5,6 +5,18 @@ app.get("/", (req, res)=> {
     res.send("Hello World");
   });
 
+app.post("/Register", (req, res) =>{
+   res.sendStatus(201);
+});
+app.put("/user/Shubham", (req, res) =>{
+    res.sendStatus(200);
+ });
+ app.patch("/user/Shubham", (req, res) =>{
+    res.sendStatus(200);
+ });
+ app.delete("/user/Shubham", (req, res) =>{
+    res.sendStatus(200);
+ });
   app.get("/about", (req, res)=> {
     res.send("<h1>This is the about page</h1>");
   });
